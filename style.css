@@ -1,0 +1,320 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    overflow:auto
+}
+
+#top_bar {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 0px;
+    /*debuggin:*/
+    background-color: #222222;
+    z-index: 100;
+}
+
+#toolbar_list {
+    display: table;
+/*  height: 50px;  */
+    width: 100%;
+    max-width: 1400px;
+    
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#toolbar_list li {
+    display: table-cell;
+    height: 50px;
+    width: 14.285714286%; /*100% / 6*/
+    line-height: 50px;
+    text-align: center;
+    background-color: #222222;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:13px;
+    color: #DDDDDD;
+    text-shadow: 2px 2px #000000;
+}
+
+a {
+ text-decoration: none;
+}
+
+li a {
+    color: #DDDDDD;
+    text-decoration: none;
+    border-bottom: solid 1px transparent;
+    transition: all 0.3s ease;
+}
+
+.active {
+    border-bottom: solid 1px white;
+    font-size: 16px;
+}
+
+.inactive {
+    border-bottom: solid 1px transparent;
+    font-size:12px;
+}
+
+li a:hover {
+    color: #FFFFFF;
+}
+
+#content {
+    position: absolute;
+    width: 100%;
+    left:0px;
+    right:0px;
+    top: 50px;
+    overflow: scroll;
+    background-color:#E1DED5;
+}
+
+.logo-overlay {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+}
+
+.left-block {
+    height:45%;
+    width:45%;
+    float:left;
+    font-size: 15px;
+    color: black;
+    text-shadow: 0px 0px 0; 
+    overflow:scroll;
+    background-color: white;
+    border: solid 1px black;
+    opacity:.8;
+}
+.right-block {
+    width:45%;
+    height:45%;
+    float:right;
+    border: solid 1px black;
+}
+
+.texty-links {
+    margin-top: 15%;
+    width:100%;
+    height:140px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color:clear;
+    position: relative;
+}
+
+.span-link {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.texty-link {
+    overflow: scroll;
+    display:inline-block;
+    vertical-align: top;
+    margin: 15px;
+    margin-top:0;
+    width: 130px;
+    height: 100%;
+    white-space: normal;
+    background-color:white;
+    background-image: url('heart.png');
+    font-size: 15px;
+    line-height: 1em;
+    opacity: .6;
+    padding:10px;
+    position: relative;    
+    background-repeat:no-repeat; 
+    background-position:center;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: red;
+    float:left;
+    margin: 50px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    text-shadow: 0 0 0;
+}
+.circle_annotation {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+    background-color: red;
+    margin: 50px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    text-shadow: 0 0 0;
+}
+
+.circle:hover {
+    color: white;
+}
+
+.circle h2 {
+    margin-bottom:0px;
+    margin-top:15px;
+}
+
+.circle h4 {
+    margin-top:30px;
+}
+
+.circle-holder {
+    height: 300px;
+    width: 600px;
+    margin:auto;
+}
+#overview {
+}
+#full {
+    height: 5000px;
+}
+#circle-canvas {
+    background-color: white;
+}
+
+.texty-link:hover {
+    opacity: 1;
+}
+
+.texty-link h2 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    text-shadow: 0 0 0;
+}
+
+.texty-link p {
+    text-align: left;
+    font-size: 12px;
+    color: black;
+    text-shadow: 0 0 0;
+}
+
+.placeholder {
+    margin: 0px auto;
+    height: 1000px;
+    background-color: blue;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.spaceholder {
+    width:100%;
+    height:50px;
+}
+
+.annotated_image {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+.annotations {
+    position: absolute;
+    top: 15%;
+    bottom: 0px;
+    left:10%;
+    right:10%;
+    color:black;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h3.annotation {
+    font-size: 68px;
+    word-spacing: .5em;
+    letter-spacing: .1em;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: .1em;
+    word-spacing: .3em;
+}
+
+.quote_background {
+    display: block;
+    width: 100%;
+    margin:auto;
+}
+
+.section {
+    font-family: 'Special Elite', cursive;
+    width: 100%;
+    max-width: 1400px;
+    text-shadow: 2px 1px #FFF;
+}
+
+.section p {
+    margin: 50px;
+    font-size: 20px;
+}
+
+.section h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.bio {
+    max-width:1400px;
+    width: 90%;
+    margin: 20px auto;
+    background-color:white;
+}
+
+.bio_photo {
+    float: left;
+    height: 150px;
+    width: 130px;
+    background-color:yellow;
+    margin: 10px;
+}
+.bio_blurb {
+    float: left;
+    width: calc(100% - 150px);
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-color: #623518;
+}
+
+
+/*for debugging*/
+/*
+* {Outline: 2px dotted red} 
+** {Outline: 2px dotted green} 
+*** {Outline: 2px dotted orange} 
+**** {Outline: 2px dotted blue} 
+***** {Outline: 1px solid red} 
+****** {Outline: 1px solid green} 
+******* {Outline: 1px solid orange} 
+******** {Outline: 1px solid blue}
+*/
